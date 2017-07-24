@@ -1,0 +1,23 @@
+/* CSS Here */
+body, html {
+	min-height: 100%;
+}
+
+body {
+	background-image: url("shoppingcartbkgd.png");
+}
+
+#groceryList li:nth-child(odd) {
+	background-color: #bcd1e2;
+}
+
+.contentDiv {
+	background-color: white;
+	border: 3px solid #000066;
+	border-radius: 5px;
+	padding-bottom: 5px;
+}
+
+#headerTitle {
+	text-align: center;
+}

@@ -1,0 +1,64 @@
+<!--
+
+LAB TO-DO LIST:
+1. Setup basic HTML page
+2. Append items and prices from the shopping cart to the page
+3. Show the total of the cart on the page
+
+STRATEGY: 
+Form that takes the name and price of the item and creates an object
+Each time object is created, do two things:
+	Add the object to an array
+	Add the item & its price to our list
+	Calculate running total on button click & set focus back to the name field
+-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Lab 8 | DOM Shopping Cart</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap-theme.min.css">
+    	<link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-3"></div>
+				<div class="col-xs-6 contentDiv">
+					<h1 id="headerTitle">Shopping List</h1>
+				</div>
+				<div class="col-xs-3"></div>
+			</div>
+			<div><br><br></div>
+			<div class="row">
+				<div class="col-xs-4 contentDiv" id="groceryInputDiv">
+					<!--FORM INPUTS FOR ITEMS-->
+					<label for="itemName">Grocery Name:</label>
+					<input type="text" class="form-control" id="itemName">
+					<label for="itemPrice">Price:</label>
+					<input type="text" class="form-control" id="itemPrice">
+					<label for="itemQty">Quantity:</label>
+					<input type="text" class="form-control" id="itemQty">
+					<br>
+					<button class="btn btn-primary" id="groceryBtn">Add to Cart</button>
+					<br>
+				</div>
+				<div class="col-xs-2"></div>
+				<div class="col-xs-6 contentDiv">
+					<h3>Groceries</h3>
+					<ol class="list-group" id="groceryList">
+						<!--use JS to insert list items-->
+					</ol>
+					<h4 id="cartTotalOutput"></h4>
+					<!--<button class="btn btn-success" id="totalBtn">Calculate Total</button>-->
+					<!--OUTPUT FOR CART LIST + TOTAL-->
+				</div>
+			</div>
+		</div>
+	<script src="script.js"></script>
+	</body>
+</html>
