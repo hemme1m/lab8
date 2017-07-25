@@ -11,7 +11,7 @@ function addToCartList () {
 	var itemPrice = Number(priceInput.value);
 	var itemQty = Number(qtyInput.value);
 	var listItem = document.createElement("li");
-	var groceryObj = {itemName, itemPrice, itemQty};
+	var groceryObj = {itemName: itemName, itemPrice: itemPrice, itemQty: itemQty};
 
 	shoppingCart.push(groceryObj);
 
